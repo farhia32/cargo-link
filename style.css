@@ -1,0 +1,997 @@
+/* ========================================
+   CARGO LINK WEBSITE
+   Main Stylesheet
+======================================== */
+
+
+/* 1. CSS VARIABLES */
+:root {
+    --navy: #0B1F33;
+    --blue: #1769AA;
+    --teal: #19A7A0;
+
+    --background: #F7F9FC;
+    --white: #FFFFFF;
+
+    --text: #243447;
+    --muted: #667085;
+    --border: #D9E2EC;
+
+    --shadow: 0 10px 30px rgba(11, 31, 51, 0.08);
+    --shadow-hover: 0 16px 40px rgba(11, 31, 51, 0.14);
+
+    --radius: 14px;
+    --transition: 0.3s ease;
+}
+
+
+/* 2. RESET AND GLOBAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--white);
+    color: var(--text);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--navy);
+    line-height: 1.25;
+}
+
+p {
+    color: var(--muted);
+}
+
+::selection {
+    background-color: var(--teal);
+    color: var(--white);
+}
+
+
+/* 3. GENERAL BUTTON STYLES */
+.btn,
+button {
+    transition:
+        background-color var(--transition),
+        color var(--transition),
+        transform var(--transition),
+        box-shadow var(--transition);
+}
+
+button,
+a {
+    outline-offset: 4px;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid var(--teal);
+}
+
+
+/* 4. NAVIGATION BAR */
+header {
+    width: 100%;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 1200px;
+    min-height: 82px;
+    margin: 0 auto;
+    padding: 16px 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+/* Logo */
+nav > div:first-child a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: var(--navy);
+    white-space: nowrap;
+}
+
+nav > div:first-child a::before {
+    content: "";
+    display: inline-block;
+    width: 9px;
+    height: 27px;
+    background-color: var(--teal);
+    border-radius: 5px;
+    margin-right: 9px;
+    vertical-align: -5px;
+}
+
+/* Navigation links */
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+}
+
+nav ul li a {
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text);
+    transition: color var(--transition);
+}
+
+nav ul li a:hover {
+    color: var(--teal);
+}
+
+/* Get Started button */
+nav > a:last-child {
+    display: inline-block;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 11px 21px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    transition: var(--transition);
+}
+
+nav > a:last-child:hover {
+    background-color: var(--navy);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+
+/* 5. HERO SECTION */
+#hero {
+    max-width: 1200px;
+    min-height: 570px;
+    margin: 0 auto;
+    padding: 80px 24px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 55px;
+}
+
+/* Hero text */
+#hero .hero-content > p:first-child {
+    display: inline-block;
+    background-color: rgba(25, 167, 160, 0.12);
+    color: #087E78;
+    padding: 7px 14px;
+    border-radius: 30px;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    margin-bottom: 22px;
+}
+
+#hero h1 {
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    font-weight: 800;
+    letter-spacing: -2px;
+    margin-bottom: 22px;
+}
+
+#hero .hero-content > p:nth-of-type(2) {
+    max-width: 520px;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+/* Hero buttons container */
+#hero .hero-content > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+/* Hero buttons */
+#hero .hero-content > div a {
+    display: inline-block;
+    padding: 14px 24px;
+    border: 2px solid var(--blue);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    transition: var(--transition);
+}
+
+#hero .hero-content > div a:first-child {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+#hero .hero-content > div a:first-child:hover {
+    background-color: var(--navy);
+    border-color: var(--navy);
+    transform: translateY(-3px);
+}
+
+#hero .hero-content > div a:last-child {
+    color: var(--blue);
+    background-color: var(--white);
+}
+
+#hero .hero-content > div a:last-child:hover {
+    background-color: var(--blue);
+    color: var(--white);
+    transform: translateY(-3px);
+}
+
+/* Hero image */
+#hero > div:last-child {
+    position: relative;
+}
+
+#hero > div:last-child::before {
+    content: "";
+    position: absolute;
+    width: 85%;
+    height: 85%;
+    right: -15px;
+    bottom: -15px;
+    background-color: var(--teal);
+    opacity: 0.14;
+    border-radius: 24px;
+    z-index: -1;
+}
+
+#hero > div:last-child img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: var(--shadow);
+}
+
+
+/* 6. SHARED SECTION STYLES */
+#why-us,
+#tracking,
+#services,
+#how-it-works {
+    padding: 90px 24px;
+}
+
+#why-us > div:first-child,
+#services > div:first-child,
+#how-it-works > div:first-child {
+    max-width: 720px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+#why-us > div:first-child > p:first-child,
+#services > div:first-child > p:first-child,
+#how-it-works > div:first-child > p:first-child,
+#tracking > div:first-child > p:first-child,
+#cta > div > p:first-child {
+    color: var(--teal);
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 14px;
+}
+
+#why-us h2,
+#tracking h2,
+#services h2,
+#how-it-works h2,
+#cta h2 {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 700;
+    letter-spacing: -0.8px;
+    margin-bottom: 18px;
+}
+
+#why-us > div:first-child > p:last-child,
+#services > div:first-child > p:last-child,
+#how-it-works > div:first-child > p:last-child {
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+
+/* 7. WHY CHOOSE CARGO LINK */
+#why-us {
+    background-color: var(--background);
+}
+
+#why-us > div:nth-child(2) {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+#why-us article {
+    background-color: var(--white);
+    padding: 30px 24px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    transition: var(--transition);
+}
+
+#why-us article:hover {
+    transform: translateY(-7px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--teal);
+}
+
+#why-us article h3 {
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+}
+
+#why-us article p {
+    font-size: 0.92rem;
+    line-height: 1.8;
+}
+
+/* Decorative icon */
+#why-us article h3::before {
+    content: "✓";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(25, 167, 160, 0.13);
+    color: var(--teal);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 18px;
+}
+
+
+/* 8. CARGO TRACKING SECTION */
+#tracking {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 65px;
+}
+
+#tracking > div:first-child > p:nth-of-type(2) {
+    margin-bottom: 28px;
+    max-width: 500px;
+}
+
+/* Tracking form */
+#tracking form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 470px;
+}
+
+#tracking label {
+    color: var(--navy);
+    font-weight: 700;
+    font-size: 0.92rem;
+}
+
+#tracking input {
+    width: 100%;
+    min-height: 52px;
+    padding: 13px 16px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background-color: var(--background);
+    color: var(--text);
+    transition: border-color var(--transition);
+}
+
+#tracking input::placeholder {
+    color: #98A2B3;
+}
+
+#tracking input:focus {
+    border-color: var(--teal);
+    outline: 3px solid rgba(25, 167, 160, 0.15);
+}
+
+/* Tracking button */
+#tracking form button {
+    min-height: 52px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: 700;
+    padding: 13px 20px;
+}
+
+#tracking form button:hover {
+    background-color: var(--navy);
+    transform: translateY(-2px);
+}
+
+/* Tracking image */
+#tracking > div:last-child img {
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
+
+/* 9. SERVICES SECTION */
+#services {
+    background-color: var(--background);
+}
+
+#services > div:nth-child(2) {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+#services article {
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    padding: 30px 24px;
+    border-radius: var(--radius);
+    transition: var(--transition);
+}
+
+#services article:hover {
+    transform: translateY(-7px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--teal);
+}
+
+#services article h3 {
+    font-size: 1.15rem;
+    margin-bottom: 14px;
+}
+
+#services article p {
+    font-size: 0.92rem;
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+
+#services article a {
+    display: inline-block;
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: color var(--transition);
+}
+
+#services article a:hover {
+    color: var(--teal);
+}
+
+
+/* 10. HOW IT WORKS SECTION */
+#how-it-works > div:nth-child(2) {
+    max-width: 1200px;
+    margin: 0 auto 35px;
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+#how-it-works article {
+    position: relative;
+    padding: 28px 22px;
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    transition: var(--transition);
+}
+
+#how-it-works article:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow);
+}
+
+#how-it-works article > span {
+    display: inline-block;
+    color: var(--teal);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+#how-it-works article > div {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(25, 167, 160, 0.12);
+    border-radius: 12px;
+    font-size: 1.5rem;
+}
+
+#how-it-works article h3 {
+    font-size: 1.05rem;
+    margin-bottom: 12px;
+}
+
+#how-it-works article p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+#how-it-works > div:last-child {
+    text-align: center;
+}
+
+#how-it-works > div:last-child a {
+    display: inline-block;
+    color: var(--blue);
+    font-weight: 700;
+    margin-top: 12px;
+    transition: color var(--transition);
+}
+
+#how-it-works > div:last-child a:hover {
+    color: var(--teal);
+}
+
+
+/* 12. CALL TO ACTION SECTION */
+#cta {
+    padding: 85px 24px;
+    background-color: var(--navy);
+    text-align: center;
+}
+
+#cta > div {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+#cta > div > p:first-child {
+    color: #62D5CE;
+}
+
+#cta h2 {
+    color: var(--white);
+}
+
+#cta > div > p:nth-of-type(2) {
+    color: #D1DCE8;
+    margin-bottom: 30px;
+    line-height: 1.9;
+}
+
+#cta > div > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+#cta > div > div a {
+    display: inline-block;
+    padding: 13px 24px;
+    border: 2px solid var(--teal);
+    border-radius: 8px;
+    font-weight: 700;
+    transition: var(--transition);
+}
+
+#cta > div > div a:first-child {
+    background-color: var(--teal);
+    color: var(--white);
+}
+
+#cta > div > div a:first-child:hover {
+    background-color: #128A84;
+    border-color: #128A84;
+    transform: translateY(-3px);
+}
+
+#cta > div > div a:last-child {
+    color: var(--white);
+    border-color: #7D91A6;
+}
+
+#cta > div > div a:last-child:hover {
+    background-color: var(--white);
+    color: var(--navy);
+    border-color: var(--white);
+}
+
+
+/* 12. FOOTER SECTION */
+#footer {
+    background-color: #071625;
+    padding: 65px 24px 0;
+}
+
+/* Footer columns */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto 45px;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 45px;
+}
+
+/* Footer logo */
+.footer-logo {
+    display: inline-block;
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+.footer-brand > p {
+    color: #A8B7C7;
+    font-size: 0.9rem;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+.footer-brand .footer-tagline {
+    color: #62D5CE;
+    font-weight: 700;
+}
+
+/* Footer headings */
+.footer-links h3,
+.footer-contact h3 {
+    color: var(--white);
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Footer links */
+.footer-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links ul li a {
+    display: inline-block;
+    color: #A8B7C7;
+    font-size: 0.9rem;
+    transition: color var(--transition);
+}
+
+.footer-links ul li a:hover {
+    color: #62D5CE;
+}
+
+/* Footer contact */
+.footer-contact p {
+    color: #A8B7C7;
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+}
+
+.footer-contact > a {
+    display: inline-block;
+    color: #62D5CE;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.footer-contact > a:hover {
+    color: var(--white);
+}
+
+/* Footer bottom bar */
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 23px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    border-top: 1px solid #26394B;
+}
+
+.footer-bottom p {
+    color: #A8B7C7;
+    font-size: 0.85rem;
+}
+
+.footer-bottom > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.footer-bottom > div a {
+    color: #A8B7C7;
+    font-size: 0.85rem;
+    transition: color var(--transition);
+}
+
+.footer-bottom > div a:hover {
+    color: #62D5CE;
+}
+
+
+/* ========================================
+   13. TABLET RESPONSIVENESS
+======================================== */
+@media screen and (max-width: 1024px) {
+
+    nav {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    nav ul {
+        gap: 14px;
+    }
+
+    nav ul li a {
+        font-size: 0.82rem;
+    }
+
+    #hero {
+        gap: 35px;
+    }
+
+    #hero h1 {
+        font-size: 3.2rem;
+    }
+
+    #why-us > div:nth-child(2),
+    #services > div:nth-child(2),
+    #how-it-works > div:nth-child(2) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #tracking {
+        gap: 35px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 35px;
+    }
+}
+
+
+/* ========================================
+   14. MOBILE RESPONSIVENESS
+======================================== */
+@media screen and (max-width: 640px) {
+
+    /* Navigation */
+    nav {
+        padding: 16px;
+        justify-content: center;
+    }
+
+    nav > div:first-child {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 16px;
+    }
+
+    nav ul li a {
+        font-size: 0.82rem;
+    }
+
+    nav > a:last-child {
+        padding: 10px 18px;
+    }
+
+    /* Hero */
+    #hero {
+        min-height: auto;
+        grid-template-columns: 1fr;
+        padding: 60px 20px;
+        gap: 40px;
+    }
+
+    #hero h1 {
+        font-size: 2.8rem;
+        letter-spacing: -1.3px;
+    }
+
+    #hero .hero-content > p:nth-of-type(2) {
+        font-size: 0.97rem;
+    }
+
+    #hero > div:last-child img {
+        height: 280px;
+        border-radius: 16px;
+    }
+
+    #hero .hero-content > div a {
+        padding: 12px 17px;
+        font-size: 0.88rem;
+    }
+
+    /* Shared sections */
+    #why-us,
+    #tracking,
+    #services,
+    #how-it-works {
+        padding: 65px 20px;
+    }
+
+    #why-us h2,
+    #tracking h2,
+    #services h2,
+    #how-it-works h2,
+    #cta h2 {
+        font-size: 2rem;
+    }
+
+    #why-us > div:first-child,
+    #services > div:first-child,
+    #how-it-works > div:first-child {
+        margin-bottom: 32px;
+    }
+
+    /* Why Us cards */
+    #why-us > div:nth-child(2),
+    #services > div:nth-child(2),
+    #how-it-works > div:nth-child(2) {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    #why-us article,
+    #services article,
+    #how-it-works article {
+        padding: 25px 22px;
+    }
+
+    /* Tracking */
+    #tracking {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    #tracking > div:last-child img {
+        height: 260px;
+    }
+
+    /* CTA */
+    #cta {
+        padding: 65px 20px;
+    }
+
+    #cta > div > div {
+        flex-direction: column;
+    }
+
+    #cta > div > div a {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    /* Footer */
+    #footer {
+        padding: 50px 20px 0;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .footer-bottom > div {
+        gap: 15px;
+    }
+}
+
+
+/* ========================================
+   15. REDUCED MOTION ACCESSIBILITY
+======================================== */
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
