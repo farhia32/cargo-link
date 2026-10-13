@@ -12,10 +12,10 @@
 <body>
     <!--NAVBAR-->
     <header>
-        <nav>
+        <nav >
             <div>
               <!--Logo-->
-                <a href="index.html">CARGO LINK</a>
+                <a href="index.html" class="logo">CARGO LINK</a>
             </div>
             <!--Navigation Links-->
             <ul>
@@ -28,148 +28,96 @@
             </ul>
 
             <!--Get Started button-->
+            <div class="get-started">
             <a href="shipping-calculator.html">Get Started</a>
+           </div>
         </nav>
     </header>
     <main>
         <!--HERO SECTION-->
-        <section id="hero">
+        <section class="hero">
             <div class="hero-content">
-                <p>SMART CARGO LOGISTICS</p>
+                <p class="hero-tag">SMART CARGO LOGISTICS</p>
                 <h1>
                     Move Cargo.<br>
                     Move Business.
                 </h1>
                 <p>Connect with reliable cargo services, track your shipments and simplify your logistics journey with Cargo Link.</p>
            <div>
-            <a href="track-cargo.html">Track Cargo</a>
-            <a href="shipping-calculator.html"> Calculate Shipping</a>
+        <a href="track-cargo.html"class="btn btn-primary">Track Cargo</a>
+            <a href="shipping-calculator.html" class="btn btn-secondary"> Calculate Shipping</a>
            </div>
 
             </div>
             <!--Hero Image-->
-            <div>
-                <img src="images/hero.png" alt="Cargo Link Logistics and cargo transportations">
+            <div class="hero-image">
+            <img src="images/hero.png" alt="Cargo Link Logistics and cargo transportations">
             </div>
 
         </section>
-
-
 
 <!-- WHY CARGO LINK SECTION -->
 <section id="why-us">
 
     <div>
-        <p>WHY CARGO LINK?</p>
-
-        <h2>
-            A Better Way to Move Cargo
-        </h2>
-
-        <p>
-            Cargo Link connects customers with reliable cargo
-            businesses, making shipping easier, more transparent,
-            and more convenient.
-        </p>
+        <p class="section-description">WHY CARGO LINK?</p>
+        <h2>A Better Way to Move Cargo</h2>
+        <p>Cargo Link connects customers with reliable cargo businesses, making shipping easier, more transparent and more convenient.</p>
     </div>
 
 
-    <div>
+    <div class="why-us-cards">
 
         <!-- Feature 1 -->
         <article>
             <h3>Reliable</h3>
-
-            <p>
-                Connect with trusted cargo services and
-                find solutions you can depend on.
-            </p>
+            <p>Connect with trusted cargo services and find solutions you can depend on.</p>
         </article>
-
 
         <!-- Feature 2 -->
         <article>
             <h3>Convenient</h3>
-
-            <p>
-                Find cargo services, calculate shipping costs,
-                and track your shipment in one place.
-            </p>
+            <p>Find cargo services, calculate shipping costs and track your shipment in one place.</p>
         </article>
-
 
         <!-- Feature 3 -->
         <article>
-            <h3>Transparent</h3>
-
-            <p>
-                Get clear shipping information and understand
-                your cargo journey from start to finish.
-            </p>
+            <h3>Transparent</h3>    
+            <p>Get clear shipping information and understand your cargo journey from start to finish.</p>
         </article>
-
 
         <!-- Feature 4 -->
         <article>
             <h3>Connected</h3>
-
-            <p>
-                Helping customers discover cargo businesses
-                while giving businesses greater visibility.
-            </p>
+            <p>Helping customers discover cargo businesses while giving businesses greater visibility.</p>
         </article>
 
     </div>
 
 </section>
+
 <!-- CARGO TRACKING SECTION -->
-<section id="tracking">
+<section id="tracking" >
 
-    <!-- Tracking Introduction -->
-    <div>
+    <div class="tracking-content">
 
-        <p>TRACK YOUR SHIPMENT</p>
+        <p class="tracking-description">TRACK YOUR SHIPMENT</p>
 
-        <h2>
-            Know Where Your Cargo Is
-        </h2>
+        <h2>Know Where Your Cargo Is</h2>
+        <p> Track your shipment and stay updated throughout its journey with Cargo Link.</p>
 
-        <p>
-            Track your shipment and stay updated
-            throughout its journey with Cargo Link.
-        </p>
-
-        <!-- Tracking Form -->
         <form>
 
-            <label for="tracking-number">
-                Tracking Number
-            </label>
+            <label for="tracking-number">Tracking Number</label>
 
-            <input
-                type="text"
-                id="tracking-number"
-                name="tracking-number"
-                placeholder="e.g. CL123456789"
-            >
-
-            <button type="submit">
-                Track Cargo
-            </button>
-
+            <input type="text" id="tracking-number" name="tracking-number" placeholder="e.g. CL123456789" >
+            <button type="submit" class="track-btn">Track Cargo</button>
         </form>
 
     </div>
 
-
-    <!-- Tracking Visual -->
-    <div>
-
-        <img
-            src="images/cargo-tracking.jpeg"
-            alt="Cargo shipment tracking"
-        >
-
+    <div class="tracking-image">
+    <img src="images/cargo-tracking.jpeg" alt="Cargo shipment tracking">
     </div>
 
 </section>
@@ -180,96 +128,51 @@
     <!-- Section Introduction -->
     <div>
 
-        <p>OUR SERVICES</p>
+        <p class="section-description">OUR SERVICES</p>
 
-        <h2>
-            Everything You Need to Move Cargo
-        </h2>
-
-        <p>
-            From finding the right cargo solution to tracking
-            your shipment, Cargo Link makes your logistics
-            journey simple and convenient.
-        </p>
+        <h2>Everything You Need to Move Cargo</h2>
+        <p>From finding the right cargo solution to tracking your shipment, Cargo Link makes your logistics journey simple and convenient.</p>
 
     </div>
 
-
     <!-- Services Cards -->
-    <div>
+    <div class="service-cards">
 
         <!-- Service 1 -->
         <article>
 
-            <h3>
-                Cargo Tracking
-            </h3>
+            <h3>Cargo Tracking</h3>
+            <p>Track your shipment and stay updated on your cargo journey from pickup to delivery.</p>
 
-            <p>
-                Track your shipment and stay updated on
-                your cargo journey from pickup to delivery.
-            </p>
-
-            <a href="track-cargo.html">
-                Track Cargo →
-            </a>
+            <a href="track-cargo.html">Track Cargo  </a>
 
         </article>
-
 
         <!-- Service 2 -->
         <article>
 
-            <h3>
-                Shipping Calculator
-            </h3>
+            <h3>Shipping Calculator</h3>
+            <p>Estimate your shipping costs based on your cargo and destination before you ship.</p>
 
-            <p>
-                Estimate your shipping costs based on your
-                cargo and destination before you ship.
-            </p>
-
-            <a href="shipping-calculator.html">
-                Calculate Shipping →
-            </a>
+            <a href="shipping-calculator.html">Calculate Shipping </a>
 
         </article>
-
 
         <!-- Service 3 -->
         <article>
 
-            <h3>
-                Cargo Solutions
-            </h3>
-
-            <p>
-                Discover cargo services that match your
-                shipping needs and destination.
-            </p>
-
-            <a href="services.html">
-                Explore Services →
-            </a>
+            <h3>Cargo Solutions</h3>
+            <p>Discover cargo services that match your shipping needs and destination.</p>
+            <a href="services.html"> Explore Our Services </a>
 
         </article>
-
 
         <!-- Service 4 -->
         <article>
 
-            <h3>
-                Cargo Business Connections
-            </h3>
-
-            <p>
-                Connect customers with cargo businesses
-                while helping businesses reach more people.
-            </p>
-
-            <a href="partners.html">
-                Become a Partner →
-            </a>
+            <h3>Cargo Business Connections</h3>
+            <p>Connect customers with cargo businesses while helping businesses reach more people.</p>
+            <a href="partners.html">Become a Partner </a>
 
         </article>
 
@@ -280,107 +183,54 @@
 <!-- HOW IT WORKS SECTION -->
 <section id="how-it-works">
 
-    <!-- Section Introduction -->
     <div>
 
-        <p>HOW IT WORKS</p>
+        <p class="how-it-works-tag">HOW IT WORKS</p>
 
-        <h2>
-            Shipping Made Simple
-        </h2>
-
-        <p>
-            Cargo Link makes it easier to find a cargo service,
-            arrange your shipment, and keep track of your cargo
-            from start to finish.
-        </p>
+        <h2>Shipping Made Simple</h2>
+        <p>Cargo Link makes it easier to find a cargo service, arrange your shipment and keep track of your cargo from start to finish.</p>
 
     </div>
 
-
-    <!-- Steps -->
-    <div>
+    <div class="how-it-works-cards">
 
         <!-- Step 1 -->
         <article>
 
             <span>01</span>
 
-            <div>
-                🔎
-            </div>
-
-            <h3>
-                Find a Cargo Service
-            </h3>
-
-            <p>
-                Explore available cargo services and choose
-                the option that best fits your shipping needs.
-            </p>
+            <h3>Find a Cargo Service</h3>
+            <p>Explore available cargo services and choose the option that best fits your shipping needs.</p>
 
         </article>
-
 
         <!-- Step 2 -->
         <article>
 
             <span>02</span>
 
-            <div>
-                📦
-            </div>
-
-            <h3>
-                Book Your Shipment
-            </h3>
-
-            <p>
-                Provide your cargo and destination details
-                to get your shipment ready for transportation.
-            </p>
+            <h3>Book Your Shipment</h3>
+            <p>Provide your cargo and destination details to get your shipment ready for transportation.</p>
 
         </article>
-
 
         <!-- Step 3 -->
         <article>
 
             <span>03</span>
 
-            <div>
-                📍
-            </div>
-
-            <h3>
-                Track Your Cargo
-            </h3>
-
-            <p>
-                Use your tracking number to stay updated
-                on your shipment throughout its journey.
-            </p>
+            <h3>Track Your Cargo</h3>
+            <p>Use your tracking number to stay updated on your shipment throughout its journey.</p>
 
         </article>
-
 
         <!-- Step 4 -->
         <article>
 
             <span>04</span>
 
-            <div>
-                ✅
-            </div>
-
-            <h3>
-                Receive Your Cargo
-            </h3>
-
-            <p>
-                Follow your shipment until it reaches
-                its destination safely.
-            </p>
+            <h3>Receive Your Cargo</h3>
+            <p>Follow your shipment until it reaches its destination safely.</p>
 
         </article>
 
@@ -390,9 +240,7 @@
     <!-- Learn More -->
     <div>
 
-        <a href="how-it-works.html">
-            Learn More About How It Works →
-        </a>
+        <a href="how-it-works.html">Learn More</a>
 
     </div>
 
@@ -403,27 +251,15 @@
 
     <div>
 
-        <p>LET'S MOVE FORWARD</p>
+        <p class="cta-tag">LET'S MOVE FORWARD</p>
 
-        <h2>
-            Ready to Move Your Cargo?
-        </h2>
-
-        <p>
-            Discover reliable cargo services, simplify your
-            shipping journey, and connect with the right
-            logistics partners through Cargo Link.
-        </p>
+        <h2> Ready to Move Your Cargo?</h2>
+        <p>Discover reliable cargo services, simplify yourshipping journey, and connect with the right logistics partners through Cargo Link.</p>
 
         <div>
 
-            <a href="shipping-calculator.html">
-                Get Started →
-            </a>
-
-            <a href="contact.html">
-                Contact Us
-            </a>
+            <a href="shipping-calculator.html" class="btn btn-primary">Get Started </a>
+            <a href="contact.html" class="btn btn-secondary">Contact Us</a>
 
         </div>
 
@@ -436,29 +272,17 @@
 <!-- FOOTER SECTION -->
 <footer id="footer">
 
-    <!-- Main Footer Content -->
-    <div class="footer-container">
+    <div class="footer-card">
 
-        <!-- Brand Information -->
-        <div class="footer-brand">
+        <div class="footer-website">
 
-            <a href="index.html" class="footer-logo">
-                CARGO LINK
-            </a>
+            <a href="index.html" class="footer-logo">CARGO LINK</a>
+            <p>Connecting cargo businesses with customers through simple and convenient logistics solutions.</p>
 
-            <p>
-                Connecting cargo businesses with customers
-                through simple and convenient logistics solutions.
-            </p>
-
-            <p class="footer-tagline">
-                Connecting Cargo. Empowering Business.
-            </p>
+            <p class="footer-tag"> Connecting Cargo. Empowering Business.</p>
 
         </div>
 
-
-        <!-- Quick Links -->
         <div class="footer-links">
 
             <h3>Quick Links</h3>
@@ -473,73 +297,37 @@
 
         </div>
 
-
-        <!-- Our Services -->
         <div class="footer-links">
 
             <h3>Our Services</h3>
 
             <ul>
-                <li>
-                    <a href="track-cargo.html">Cargo Tracking</a>
-                </li>
-
-                <li>
-                    <a href="shipping-calculator.html">
-                        Shipping Calculator
-                    </a>
-                </li>
-
-                <li>
-                    <a href="services.html">Cargo Solutions</a>
-                </li>
-
-                <li>
-                    <a href="partners.html">
-                        Business Connections
-                    </a>
-                </li>
+                <li><a href="track-cargo.html">Cargo Tracking</a></li>
+                <li><a href="shipping-calculator.html">Shipping Calculator</a></li>
+                <li><a href="services.html">Cargo Solutions</a></li>
+                <li><a href="partners.html">Business Connections</a></li>
             </ul>
 
         </div>
 
-
-        <!-- Contact Information -->
         <div class="footer-contact">
 
             <h3>Contact Us</h3>
-
-            <p>
-                Have questions about Cargo Link?
-            </p>
-
-            <a href="contact.html">
-                Get in Touch →
-            </a>
+            <p>Have questions about Cargo Link?</p>
+            <a href="contact.html">Get in touch</a>
 
         </div>
 
     </div>
 
-
-    <!-- Footer Bottom -->
     <div class="footer-bottom">
 
-        <p>
-            &copy; 2026 Cargo Link. All rights reserved.
-        </p>
-
-        <div>
-            <a href="privacy-policy.html">Privacy Policy</a>
-
-            <a href="terms.html">Terms &amp; Conditions</a>
-        </div>
+        <p> &copy; 2026 Cargo Link. All rights reserved.</p>
 
     </div>
 
 </footer>
 
-    
     
 </body>
 </html>

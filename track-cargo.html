@@ -10,13 +10,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-         <!--NAVBAR-->
-    <header>
-        <nav>
-            <div>
-              <!--Logo-->
-                <a href="index.html">CARGO LINK</a>
+  <!--NAVBAR-->
+<header>
+    <nav >
+    <div>
+    <!--Logo-->
+    <a href="index.html" class="logo">CARGO LINK</a>
             </div>
             <!--Navigation Links-->
             <ul>
@@ -29,26 +28,25 @@
             </ul>
 
             <!--Get Started button-->
+            <div class="get-started">
             <a href="shipping-calculator.html">Get Started</a>
+           </div>
         </nav>
     </header>
+
     <main>
-        <!-- =========================
-           2. TRACKING HERO SECTION 
-          ========================== -->
-          <section class="tracking-hero"> 
+
+    <section class="tracking-hero"> 
             
-            <div class="tracking-hero-content"> 
+    <div class="tracking-hero-content"> 
 
-            <span class="hero-label"> CARGO TRACKING </span>
+        <span class="track-label"> CARGO TRACKING </span>
 
-             <h1>
-                 Track Your Cargo. <span>Stay Connected.</span>
-            </h1>
+            <h1>Track Your Cargo. <span>Stay Connected.</span></h1>
 
-              <p> Stay informed about your shipment's journey with Cargo Link. Enter your tracking number to check your cargo's latest status and delivery progress. </p> 
+            <p> Stay informed about your shipment's journey with Cargo Link. Enter your tracking number to check your cargo's latest status and delivery progress. </p> 
 
-              <a href="#tracking-form" class="btn btn-primary"> Track Your Shipment </a>
+            <a href="#tracking-form" class="btn btn-primary"> Track Your Shipment </a>
 
                <p class="hero-trust"> Reliable. Convenient. Connected. </p> 
             </div>
@@ -59,411 +57,265 @@
                 
                 </section> 
 
-            <!-- =========================
-                  3. TRACKING FORM
-             ========================== -->
-
-              <section id="tracking-form" class="tracking-section">
+<!-- 3. TRACKING FORM-->
+<section id="tracking-form" class="tracking-section">
                 
-                <div class="section-heading"> 
+<div class="section-heading"> 
 
-                    <span class="section-label"> SHIPMENT INFORMATION </span>
-                     <h2>Track Your Shipment</h2>
-                      <p> Enter the tracking number provided by your cargo company to find your shipment information. </p>
+ <span class="section-label"> SHIPMENT INFORMATION </span>
+    <h2>Track Your Shipment</h2>
+        <p> Enter the tracking number provided by your cargo company to find your shipment information. </p>
 
-                     </div> 
+        </div> 
 
-                     <div class="tracking-form-card">
+    <div class="tracking-form-card">
 
-                         <form action="#" method="get"> 
+    <form > 
 
-                            <div class="form-group"> 
-
-                                <label for="tracking-number"> Tracking Number </label>
-                                 <input type="text" id="tracking-number" name="tracking-number" placeholder="e.g. CL123456789" autocomplete="off" required >
+    <label for="tracking-number"> Tracking Number </label>
+        <input type="text" id="tracking-number" name="tracking-number" placeholder="e.g. CL123456789"  >
                                 
-                                </div> 
+    </div> 
 
-                        <button type="submit" class="btn btn-primary"> Track Cargo </button> 
+    <button type="submit" class="btn btn-primary"> Track Cargo </button> 
 
-                    </form>
+  </form>
                     
-                    <p class="form-help"> Your tracking number is provided by your cargo service provider. </p>
+    <p class="form-help"> Your tracking number is provided by your cargo service provider. </p>
                 
-                </div> 
-            </section>
+</div> 
+</section>
 
+<!--4. SHIPMENT PROGRESS-->
 
-        <!-- =========================
-             4. SHIPMENT PROGRESS
-        ========================== -->
+<section id="shipment-progress" class="progress-section">
 
-        <section id="shipment-progress" class="progress-section">
+    <div class="section-heading">
 
-            <div class="section-heading">
+    <span class="section-label">DELIVERY JOURNEY</span>
 
-                <span class="section-label">
-                    DELIVERY JOURNEY
-                </span>
+    <h2>Your Cargo's Journey</h2>
+    <p>Follow the different stages a shipment may pass through before reaching its destination.</p>
 
-                <h2>Your Cargo's Journey</h2>
+    </div>
 
-                <p>
-                    Follow the different stages a shipment may pass
-                    through before reaching its destination.
-                </p>
+    <div class="delivery">
 
-            </div>
+<!-- Step 1 -->
+ <article class="delivery-stage">
 
-            <div class="timeline">
+<div class="delivery-number">1</div>
 
-                <!-- Step 1 -->
-                <article class="timeline-item">
+<div class="delivery-content">
 
-                    <div class="timeline-marker">
-                        1
-                    </div>
+    <h3>Shipment Registered</h3>
+    <p>The cargo company records the shipment details and creates a tracking number.</p>
 
-                    <div class="timeline-content">
+</div>
 
-                        <h3>Shipment Registered</h3>
+</article>
+<!-- Step 2 -->
 
-                        <p>
-                            The cargo company records the shipment
-                            details and creates a tracking number.
-                        </p>
+<article class="delivery-stage">
 
-                    </div>
+ <div class="delivery-number">2</div>
 
-                </article>
+  <div class="delivery-content">
 
+  <h3>Cargo Picked Up</h3>
+  <p>The cargo is collected and prepared for transportation.</p>
 
-                <!-- Step 2 -->
-                <article class="timeline-item">
+</div>
 
-                    <div class="timeline-marker">
-                        2
-                    </div>
+</article>
 
-                    <div class="timeline-content">
+ <!-- Step 3 -->
 
-                        <h3>Cargo Picked Up</h3>
+<article class="delivery-stage">
 
-                        <p>
-                            The cargo is collected and prepared
-                            for transportation.
-                        </p>
+ <div class="delivery-number">3</div>
 
-                    </div>
+    <div class="delivery-content">
 
-                </article>
+    <h3>In Transit</h3>
 
+    <p>The shipment is travelling towards its destination.</p>
 
-                <!-- Step 3 -->
-                <article class="timeline-item">
+</div>
 
-                    <div class="timeline-marker">
-                        3
-                    </div>
+</article>
 
-                    <div class="timeline-content">
+          <!-- Step 4 -->
 
-                        <h3>In Transit</h3>
+<article class="delivery-stage">
 
-                        <p>
-                            The shipment is travelling towards
-                            its destination.
-                        </p>
+    <div class="delivery-number">4</div>
 
-                    </div>
+    <div class="delivery-content">
 
-                </article>
+    <h3>Out for Delivery</h3>
+     <p>The shipment is on its final delivery journey, where applicable.</p>
 
+    </div>
 
-                <!-- Step 4 -->
-                <article class="timeline-item">
+</article>
 
-                    <div class="timeline-marker">
-                        4
-                    </div>
+         <!-- Step 5 -->
 
-                    <div class="timeline-content">
+<article class="delivery-stage">
 
-                        <h3>Out for Delivery</h3>
+    <div class="delivery-number">5</div>
 
-                        <p>
-                            The shipment is on its final delivery
-                            journey, where applicable.
-                        </p>
+    <div class="delivery-content">
 
-                    </div>
+    <h3>Delivered</h3>
+    <p>The cargo has reached its destination and delivery has been confirmed.</p>
 
-                </article>
+    </div>
 
+</article>
 
-                <!-- Step 5 -->
-                <article class="timeline-item">
+    </div>
 
-                    <div class="timeline-marker">
-                        5
-                    </div>
+</section>
 
-                    <div class="timeline-content">
 
-                        <h3>Delivered</h3>
+<!-- 5. HOW TRACKING WORKS -->
 
-                        <p>
-                            The cargo has reached its destination
-                            and delivery has been confirmed.
-                        </p>
+<section id="how-tracking-works" class="tracking-how-it-works">
 
-                    </div>
+ <div class="section-heading">
 
-                </article>
+ <span class="section-label">SIMPLE AND CONVENIENT </span>
 
-            </div>
+    <h2>How Cargo Tracking Works</h2>
+     <p>Finding your shipment should be simple. Follow these three steps.</p>
 
-        </section>
+</div>
 
+<div class="tracking-steps">
 
-        <!-- =========================
-             5. HOW TRACKING WORKS
-        ========================== -->
+    <!-- Card 1 -->
+<article class="steps">
 
-        <section id="how-tracking-works" class="tracking-how-it-works">
+ <div class="numbers">01</div>
 
-            <div class="section-heading">
+    <h3>Get Your Tracking Number</h3>
+    <p>Receive your shipment tracking number from your cargo service provider.</p>
 
-                <span class="section-label">
-                    SIMPLE AND CONVENIENT
-                </span>
+</article>
 
-                <h2>How Cargo Tracking Works</h2>
+    <!-- Card 2 -->
+<article class="steps">
 
-                <p>
-                    Finding your shipment should be simple.
-                    Follow these three steps.
-                </p>
+<div class="numbers">02</div>
 
-            </div>
+    <h3>Enter Your Details</h3>
+    <p>Enter your tracking number into the tracking form on Cargo Link.</p>
 
+</article>
 
-            <div class="tracking-steps">
+     <!-- Card 3 -->
+<article class="steps">
 
-                <!-- Card 1 -->
-                <article class="tracking-step-card">
+<div class="numbers">03</div>
 
-                    <div class="step-number">01</div>
+<h3>Check Shipment Updates</h3>
+<p>View available shipment information and follow your cargo's progress.</p>
 
-                    <h3>Get Your Tracking Number</h3>
+</article>
 
-                    <p>
-                        Receive your shipment tracking number
-                        from your cargo service provider.
-                    </p>
+</div>
 
-                </article>
+</section>
 
+        <!-- 6. HELP AND SUPPORT-->
 
-                <!-- Card 2 -->
-                <article class="tracking-step-card">
+<section class="help-support">
 
-                    <div class="step-number">02</div>
+<div class="support-content">
 
-                    <h3>Enter Your Details</h3>
+ <h2>Need Help Tracking Your Cargo?</h2>
+ <p>Having trouble finding your shipment?  Contact your cargo provider or get in touch with our team for assistance. </p>
 
-                    <p>
-                        Enter your tracking number into the
-                        tracking form on Cargo Link.
-                    </p>
+<div class="support-buttons">
 
-                </article>
+ <a href="contact.html" class="btn btn-primary">Contact Us</a>
 
+ <a href="services.html" class="btn btn-secondary">Explore Our Services</a>
 
-                <!-- Card 3 -->
-                <article class="tracking-step-card">
+</div>
 
-                    <div class="step-number">03</div>
+ </div>
 
-                    <h3>Check Shipment Updates</h3>
-
-                    <p>
-                        View available shipment information
-                        and follow your cargo's progress.
-                    </p>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             6. HELP AND SUPPORT
-        ========================== -->
-
-        <section id="tracking-support" class="tracking-support">
-
-            <div class="support-content">
-
-                <h2>Need Help Tracking Your Cargo?</h2>
-
-                <p>
-                    Having trouble finding your shipment?
-                    Contact your cargo provider or get in touch
-                    with our team for assistance.
-                </p>
-
-                <div class="support-buttons">
-
-                    <a href="contact.html" class="btn btn-primary">
-                        Contact Us
-                    </a>
-
-                    <a href="services.html" class="btn btn-secondary">
-                        Explore Our Services
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
+</section>
 
     </main>
+    <!-- FOOTER SECTION -->
+<footer id="footer">
 
+    <!-- Main Footer Content -->
+    <div class="footer-card">
 
-    <!-- =========================
-         7. FOOTER
-    ========================== -->
+        <!-- Website Information -->
+        <div class="footer-website">
 
-    <footer class="footer">
+            <a href="index.html" class="footer-logo">CARGO LINK</a>
+            <p>Connecting cargo businesses with customers through simple and convenient logistics solutions.</p>
 
-        <div class="footer-container">
+            <p class="footer-tag"> Connecting Cargo. Empowering Business.</p>
 
-            <!-- Brand Information -->
-            <div class="footer-brand">
+        </div>
 
-                <a href="index.html" class="logo">
-                    CARGO <span>LINK</span>
-                </a>
+        <div class="footer-links">
 
-                <p>
-                    Connecting Cargo. Empowering Business.
-                </p>
+            <h3>Quick Links</h3>
 
-                <p>
-                    Helping customers discover cargo services
-                    and making logistics easier to navigate.
-                </p>
-
-            </div>
-
-
-            <!-- Quick Links -->
-            <div class="footer-links">
-
-                <h3>Quick Links</h3>
-
-                <ul>
-
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-
-                    <li>
-                        <a href="track-cargo.html">Track Cargo</a>
-                    </li>
-
-                    <li>
-                        <a href="services.html">Services</a>
-                    </li>
-
-                    <li>
-                        <a href="how-it-works.html">How It Works</a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-            <!-- Services -->
-            <div class="footer-links">
-
-                <h3>Our Services</h3>
-
-                <ul>
-
-                    <li>
-                        <a href="shipping-calculator.html">
-                            Shipping Calculator
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="partners.html">
-                            Cargo Partners
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="faq.html">FAQs</a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-            <!-- Contact -->
-            <div class="footer-links">
-
-                <h3>Get In Touch</h3>
-
-                <ul>
-
-                    <li>
-                        <a href="contact.html">Contact Us</a>
-                    </li>
-
-                    <li>
-                        <a href="mailto:info@cargolink.example">
-                            Email Our Team
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="track-cargo.html">Track Cargo</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="how-it-works.html">How It Works</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
 
         </div>
 
 
-        <!-- Footer Bottom -->
-        <div class="footer-bottom">
+        <!-- Our Services -->
+        <div class="footer-links">
 
-            <p>
-                &copy; 2026 Cargo Link. All rights reserved.
-            </p>
+            <h3>Our Services</h3>
 
-            <div class="footer-legal">
-
-                <a href="privacy-policy.html">
-                    Privacy Policy
-                </a>
-
-                <a href="terms.html">
-                    Terms and Conditions
-                </a>
-
-            </div>
+            <ul>
+                <li><a href="track-cargo.html">Cargo Tracking</a></li>
+                <li><a href="shipping-calculator.html">Shipping Calculator</a></li>
+                <li><a href="services.html">Cargo Solutions</a></li>
+                <li><a href="partners.html">Business Connections</a></li>
+            </ul>
 
         </div>
 
-    </footer>
+        <!-- Contact Information -->
+        <div class="footer-contact">
 
-    </main>
+            <h3>Contact Us</h3>
+            <p>Have questions about Cargo Link?</p>
+            <a href="contact.html">Get in touch</a>
+
+        </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+
+        <p> &copy; 2026 Cargo Link. All rights reserved.</p>
+
+    </div>
+
+</footer>
+
+    
 </body>
 </html>
