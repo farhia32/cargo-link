@@ -9,6 +9,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <!--NAVBAR-->
 <header>
@@ -73,15 +74,18 @@
     <form > 
 
     <label for="tracking-number"> Tracking Number </label>
-        <input type="text" id="tracking-number" name="tracking-number" placeholder="e.g. CL123456789"  >
+        <input type="text" id="tracking-number" name="tracking-number" placeholder="e.g. CL123456789" autocomplete="off" aria-describedby="tracking-help" required>
                                 
-    </div> 
-
     <button type="submit" class="btn btn-primary"> Track Cargo </button> 
 
   </form>
                     
     <p class="form-help"> Your tracking number is provided by your cargo service provider. </p>
+    <div
+                id="tracking-result"
+                class="tracking-result"
+                aria-live="polite" hidden>
+
                 
 </div> 
 </section>
@@ -292,7 +296,6 @@
                 <li><a href="shipping-calculator.html">Shipping Calculator</a></li>
                 <li><a href="services.html">Cargo Solutions</a></li>
                 <li><a href="partners.html">Business Connections</a></li>
-                 <li><a href="patners.html">Partner With US</a></li>
             </ul>
 
         </div>
