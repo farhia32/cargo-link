@@ -71,7 +71,7 @@
 
     <div class="tracking-form-card">
 
-    <form > 
+    <form action="#sample-tracking-result" method="get" > 
 
     <label for="tracking-number"> Tracking Number </label>
         <input type="text" id="tracking-number" name="tracking-number" placeholder="e.g. CL123456789" autocomplete="off" aria-describedby="tracking-help" required>
@@ -81,13 +81,51 @@
   </form>
                     
     <p class="form-help"> Your tracking number is provided by your cargo service provider. </p>
-    <div
-                id="tracking-result"
-                class="tracking-result"
-                aria-live="polite" hidden>
+    
+    </div>
 
+    <!-- SAMPLE TRACKING RESULT -->
+    <div id="sample-tracking-result" class="tracking-result">
+
+        <span class="section-label">SAMPLE SHIPMENT RESULT</span>
+
+        <h3>Shipment Information</h3>
+
+        <p class="sample-notice">
+            This is an illustrative example, not live shipment data.</p>
+
+        <div class="tracking-details">
+
+            <div class="tracking-detail">
+                <span>Tracking Number</span>
+                <strong>CL123456789</strong>
+            </div>
+
+            <div class="tracking-detail">
+                <span>Origin</span>
+                <strong>Nairobi, Kenya</strong>
+            </div>
+
+            <div class="tracking-detail">
+                <span>Destination</span>
+                <strong>Mombasa, Kenya</strong>
+            </div>
+
+            <div class="tracking-detail">
+                <span>Current Status</span>
+                <strong class="shipment-status">In Transit</strong>
+            </div>
+
+            <div class="tracking-detail">
+                <span>Estimated Delivery</span>
+                <strong>23 October 2026</strong>
+            </div>
+
+        </div>
+
+    </div>
                 
-</div> 
+
 </section>
 
 <!--4. SHIPMENT PROGRESS-->

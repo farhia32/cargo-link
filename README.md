@@ -122,6 +122,7 @@ cargo-link/
 ├── services.html
 ├── how-it-works.html
 ├── partners.html
+└── company-profile.html
 ├── faq.html
 ├── contact.html
 ├── style.css
@@ -132,6 +133,7 @@ cargo-link/
     └── service-her0.jpeg
     └── tracking-hero.jpeg
     └── cargo-tracking.jpeg
+    
     
 
 ##  Future Improvements
