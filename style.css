@@ -2741,3 +2741,137 @@ margin: 20px 0;
 }
 
 }
+/* COMPANY PROFILE HERO */
+
+#company-hero {
+    padding: 80px 60px;
+    background-color: #F5F7FA;
+    text-align: center;
+}
+
+#company-hero span {
+    color: #475569;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+#company-hero h1 {
+    color: #0B1F3A;
+    font-size: 42px;
+    margin: 20px 0;
+}
+
+#company-hero p {
+    color: #475569;
+    max-width: 650px;
+    margin: 0 auto 25px;
+    line-height: 1.7;
+}
+
+
+#company-services, #company-routes, #company-contact, #company-reviews {
+padding: 70px 60px;
+text-align: center;
+}
+
+#company-services h2, #company-routes h2, #company-contact h2, #company-reviews h2 {
+color: #0B1F3A;
+font-size: 32px;
+margin-bottom: 25px;
+}
+
+.profile-grid {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 25px;
+margin-top: 30px;
+}
+
+.profile-card {
+background-color: #FFFFFF;
+padding: 25px;
+border-radius: 12px;
+border: 1px solid #E2E8F0;
+box-shadow: 0 4px 12px rgba(11, 31, 58, 0.08);
+text-align: left;
+border-top: 4px solid #f97316;
+}
+
+.profile-card h3 {
+color: #0B1F3A;
+margin-bottom: 15px;
+}
+
+.profile-card p, #company-routes > p, #company-contact  p {
+color: #475569;
+line-height: 1.7;
+}
+
+.profile-card span {
+display: inline-block;
+margin-top: 10px;
+color: #475569;
+font-size: 13px;
+}
+
+.table-container {
+width: 100%;
+overflow-x: auto;
+margin-top: 30px;
+}
+
+#company-routes table {
+width: 100%;
+border-collapse: collapse;
+background-color: #FFFFFF;
+}
+
+#company-routes th, #company-routes td {
+padding: 16px;
+border: 1px solid #CBD5E1;
+text-align: left;
+}
+
+#company-routes th {
+background-color: #0B1F3A;
+color: #FFFFFF;
+}
+
+#company-routes td {
+color: #334155;
+}
+
+#company-contact .profile-card {
+max-width: 650px;
+margin: 30px auto 0;
+}
+
+
+
+@media (max-width: 768px) {
+
+#company-hero, #company-services, #company-routes, #company-contact, #company-reviews {
+    padding: 50px 20px;
+}
+
+#company-hero h1 {
+    font-size: 32px;
+}
+
+#company-services h2,#company-routes h2, #company-contact h2, #company-reviews h2 {
+    font-size: 26px;
+}
+
+.profile-grid {
+    grid-template-columns: 1fr;
+}
+
+#company-routes th, #company-routes td {
+    padding: 12px;
+    font-size: 14px;
+}
+
+    
+
+}
